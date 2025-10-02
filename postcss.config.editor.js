@@ -10,9 +10,9 @@ const plug = [postcssImport, tailwindcss(tailwindConfig), autoprefixer]
 // only for editor css
 if (process.env.IS_EDITOR) {
   const options = {
-    url: ({ url }) =>
+    url: ({ url: urlString }) =>
       // replace assets base
-      url.replace('/assets', `/wp-content/themes/${getThemeDir()}/assets`),
+      urlString.replace('/assets', `/wp-content/themes/${getThemeDir()}/assets`),
   }
   plug.push(url(options))
 }

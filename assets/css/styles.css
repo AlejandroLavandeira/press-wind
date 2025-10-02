@@ -1,10 +1,11 @@
 @config '../../tailwind.config.js';
 
-/** fonts are loaded from the theme.json */
-
 @import './settings/variables.css';
-
-@import 'tailwindcss';
-
 /** DEFAULT FOR EXAMPLE */
 @import './default.css';
+
+/** fonts are loaded from the theme.json */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

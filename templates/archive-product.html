@@ -1,0 +1,18 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- 
+    Este es el contenedor principal del contenido de la tienda.
+    Le damos un buen relleno vertical (py-12) y horizontal (px-6).
+-->
+<!-- wp:group {"tagName":"main","className":"py-12 px-6","layout":{"type":"constrained"}} -->
+
+    <!-- Este bloque muestra el título de la página, que será "Tienda". -->
+    <!-- wp:query-title {"type":"archive"} /-->
+
+    <!-- Este es el bloque mágico de WooCommerce.
+         Automáticamente mostrará la cuadrícula de tus productos. -->
+    <!-- wp:woocommerce/all-products /-->
+
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

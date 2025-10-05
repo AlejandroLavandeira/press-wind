@@ -1,127 +1,59 @@
 {
     "$schema": "https://schemas.wp.org/wp/6.3/theme.json",
     "version": 2,
-    "customTemplates": [],
     "settings": {
         "appearanceTools": true,
         "color": {
-            "duotone": [
-                {
-                    "colors": [
-                        "#000000",
-                        "#ffffff"
-                    ],
-                    "slug": "foreground-and-background",
-                    "name": "Foreground and background"
-                },
-                {
-                    "colors": [
-                        "#000000",
-                        "#ffe2c7"
-                    ],
-                    "slug": "foreground-and-secondary",
-                    "name": "Foreground and secondary"
-                },
-                {
-                    "colors": [
-                        "#000000",
-                        "#f6f6f6"
-                    ],
-                    "slug": "foreground-and-tertiary",
-                    "name": "Foreground and tertiary"
-                },
-                {
-                    "colors": [
-                        "#1a4548",
-                        "#ffffff"
-                    ],
-                    "slug": "primary-and-background",
-                    "name": "Primary and background"
-                },
-                {
-                    "colors": [
-                        "#1a4548",
-                        "#ffe2c7"
-                    ],
-                    "slug": "primary-and-secondary",
-                    "name": "Primary and secondary"
-                },
-                {
-                    "colors": [
-                        "#1a4548",
-                        "#f6f6f6"
-                    ],
-                    "slug": "primary-and-tertiary",
-                    "name": "Primary and tertiary"
-                }
-            ],
-            "gradients": [
-                {
-                    "slug": "vertical-secondary-to-tertiary",
-                    "gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--tertiary) 100%)",
-                    "name": "Vertical secondary to tertiary"
-                },
-                {
-                    "slug": "vertical-secondary-to-background",
-                    "gradient": "linear-gradient(to bottom,var(--wp--preset--color--secondary) 0%,var(--wp--preset--color--background) 100%)",
-                    "name": "Vertical secondary to background"
-                },
-                {
-                    "slug": "vertical-tertiary-to-background",
-                    "gradient": "linear-gradient(to bottom,var(--wp--preset--color--tertiary) 0%,var(--wp--preset--color--background) 100%)",
-                    "name": "Vertical tertiary to background"
-                },
-                {
-                    "slug": "diagonal-primary-to-foreground",
-                    "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--foreground) 100%)",
-                    "name": "Diagonal primary to foreground"
-                },
-                {
-                    "slug": "diagonal-secondary-to-background",
-                    "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--secondary) 50%,var(--wp--preset--color--background) 50%)",
-                    "name": "Diagonal secondary to background"
-                },
-                {
-                    "slug": "diagonal-background-to-secondary",
-                    "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--secondary) 50%)",
-                    "name": "Diagonal background to secondary"
-                },
-                {
-                    "slug": "diagonal-tertiary-to-background",
-                    "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--tertiary) 50%,var(--wp--preset--color--background) 50%)",
-                    "name": "Diagonal tertiary to background"
-                },
-                {
-                    "slug": "diagonal-background-to-tertiary",
-                    "gradient": "linear-gradient(to bottom right,var(--wp--preset--color--background) 50%,var(--wp--preset--color--tertiary) 50%)",
-                    "name": "Diagonal background to tertiary"
-                }
-            ],
             "palette": [
                 {
+                    "name": "Blanco",
+                    "slug": "white",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Fondo Claro",
+                    "slug": "background-light",
+                    "color": "#f9f9f9"
+                },
+                {
+                    "name": "Fondo Sutil",
+                    "slug": "background-subtle",
+                    "color": "#FBFBFB"
+                },
+                {
+                    "name": "Texto Oscuro",
                     "slug": "foreground",
-                    "color": "#000000",
-                    "name": "Foreground"
+                    "color": "#333333"
                 },
                 {
-                    "slug": "background",
-                    "color": "#ffffff",
-                    "name": "Background"
+                    "name": "Negro Puro",
+                    "slug": "black",
+                    "color": "#0a0a0a"
                 },
                 {
-                    "slug": "primary",
-                    "color": "#1a4548",
-                    "name": "Primary"
+                    "name": "Tostado (Base)",
+                    "slug": "base",
+                    "color": "#8c7954"
                 },
                 {
-                    "slug": "secondary",
-                    "color": "#ffe2c7",
-                    "name": "Secondary"
+                    "name": "Tostado (Contraste)",
+                    "slug": "contrast",
+                    "color": "#ad7e4b"
                 },
                 {
+                    "name": "Terracota",
                     "slug": "tertiary",
-                    "color": "rgb(190, 24, 93)",
-                    "name": "Tertiary"
+                    "color": "#8c543f"
+                },
+                {
+                    "name": "Acento Dorado",
+                    "slug": "accent",
+                    "color": "#bf820f"
+                },
+                {
+                    "name": "Acento Dorado Brillante",
+                    "slug": "accent-bright",
+                    "color": "#d9a60d"
                 }
             ]
         },
@@ -249,64 +181,8 @@
         }
     },
     "styles": {
-        "blocks": {
-            "core/button": {
-                "border": {
-                    "radius": "0"
-                },
-                "color": {
-                    "background": "var(--wp--preset--color--primary)",
-                    "text": "var(--wp--preset--color--background)"
-                },
-                "typography": {
-                    "fontSize": "var(--wp--preset--font-size--medium)"
-                }
-            },
-            "core/post-title": {
-                "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--playfair-display)",
-                    "fontWeight": "600",
-                    "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-                    "fontSize": "var(--wp--custom--typography--font-size--gigantic)"
-                }
-            },
-            "core/post-comments": {
-                "spacing": {
-                    "padding": {
-                        "top": "var(--wp--custom--spacing--small)"
-                    }
-                }
-            },
-            "core/pullquote": {
-                "border": {
-                    "width": "1px 0"
-                }
-            },
-            "core/query-title": {
-                "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--playfair-display)",
-                    "fontWeight": "600",
-                    "lineHeight": "var(--wp--custom--typography--line-height--small)",
-                    "fontSize": "var(--wp--custom--typography--font-size--gigantic)"
-                }
-            },
-            "core/quote": {
-                "border": {
-                    "width": "1px"
-                }
-            },
-            "core/site-title": {
-                "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--playfair-display)",
-                    "lineHeight": "var(--wp--custom--typography--line-height--normal)",
-                    "fontSize": "var(--wp--preset--font-size--medium)",
-                    "fontStyle": "normal",
-                    "fontWeight": "normal"
-                }
-            }
-        },
         "color": {
-            "background": "var(--wp--preset--color--background)",
+            "background": "var(--wp--preset--color--white)",
             "text": "var(--wp--preset--color--foreground)"
         },
         "elements": {
@@ -315,7 +191,8 @@
                     "fontFamily": "var(--wp--preset--font-family--playfair-display)",
                     "fontWeight": "600",
                     "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-                    "fontSize": "var(--wp--custom--typography--font-size--colossal)"
+                    "fontSize": "var(--wp--custom--typography--font-size--colossal)",
+                    "color": "var(--wp--preset--color--base)"
                 }
             },
             "h2": {
@@ -323,7 +200,8 @@
                     "fontFamily": "var(--wp--preset--font-family--playfair-display)",
                     "fontWeight": "600",
                     "lineHeight": "var(--wp--custom--typography--line-height--small)",
-                    "fontSize": "var(--wp--custom--typography--font-size--gigantic)"
+                    "fontSize": "var(--wp--custom--typography--font-size--gigantic)",
+                    "color": "var(--wp--preset--color--base)"
                 }
             },
             "h3": {
@@ -331,15 +209,17 @@
                     "fontFamily": "var(--wp--preset--font-family--playfair-display)",
                     "fontWeight": "600",
                     "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-                    "fontSize": "var(--wp--custom--typography--font-size--huge)"
+                    "fontSize": "var(--wp--custom--typography--font-size--huge)",
+                    "color": "var(--wp--preset--color--base)"
                 }
             },
             "h4": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--playfair-display)",
+                    "fontFamily": "var--wp--preset--font-family--playfair-display)",
                     "fontWeight": "600",
                     "lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-                    "fontSize": "var(--wp--preset--font-size--x-large)"
+                    "fontSize": "var(--wp--preset--font-size--x-large)",
+                    "color": "var(--wp--preset--color--base)"
                 }
             },
             "h5": {
@@ -362,7 +242,12 @@
             },
             "link": {
                 "color": {
-                    "text": "var(--wp--preset--color--tertiary)"
+                    "text": "var(--wp--preset--color--accent)"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--contrast)"
+                    }
                 }
             }
         },
@@ -374,6 +259,5 @@
             "lineHeight": "var(--wp--custom--typography--line-height--normal)",
             "fontSize": "var(--wp--preset--font-size--medium)"
         }
-    },
-    "templateParts": []
+    }
 }

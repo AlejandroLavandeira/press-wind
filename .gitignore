@@ -11,3 +11,7 @@ dist
 public
 
 inc/pwa_head.php
+
+# CSS
+style.css
+style-editor.css

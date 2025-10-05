@@ -1,14 +1,17 @@
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
 // we recommend preflight to false for avoid conflict in editor
 const usePreflightFront = false
 
-module.exports = {
+export default {
   // use preflight (reset CSS) override fonts size from theme.json
   corePlugins: {
     preflight: process.env.IS_EDITOR ? false : usePreflightFront,
   },
   content: [
-    // './**/*.{php,twig,html,json}',
-    './assets/*.{js,jsx,ts,tsx,vue}',
+    './**/*.{php,twig,html,json}',
+    './assets/**/*.{js,jsx,ts,tsx,vue,css}',
   ],
   safelist: [],
   theme: {

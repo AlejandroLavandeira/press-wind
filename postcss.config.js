@@ -1,10 +1,11 @@
 import getThemeDir from './js-helpers/getThemeDir.mjs'
 import url from 'postcss-url'
 import postcssImport from 'postcss-import'
-import tailwindcss from 'tailwindcss'
+import tailwindcss from '@tailwindcss/postcss'
 import autoprefixer from 'autoprefixer'
+import tailwindConfig from './tailwind.config.js'
 
-const plug = [postcssImport, tailwindcss, autoprefixer]
+const plug = [postcssImport, tailwindcss(tailwindConfig), autoprefixer]
 
 // only for editor css
 if (process.env.IS_EDITOR) {

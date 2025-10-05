@@ -9,3 +9,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*
+|--------------------------------------------------------------------------
+| WooCommerce Custom Styles
+|--------------------------------------------------------------------------
+*/
+
+/* Estilo para la etiqueta de "¡Oferta!" */
+.woocommerce span.onsale {
+    @apply bg-tertiary text-white rounded-full min-h-0 min-w-0 px-3 py-1 text-sm font-bold;
+}
+
+/* Estilo para los avisos de la tienda (ej. "Producto añadido al carrito") */
+.woocommerce-message, .woocommerce-info {
+    @apply border-t-4 border-contrast bg-background-subtle p-4 text-foreground;
+}
+
+.woocommerce-error {
+    @apply border-t-4 border-red-500 bg-red-100 p-4 text-red-800;
+}

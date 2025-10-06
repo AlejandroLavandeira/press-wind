@@ -56,13 +56,20 @@ if (class_exists('PressWind\PWVite')) {
     );
 }
 
+/**
+ * Añade soporte para WooCommerce al tema.
+ */
 function tejamos_sonrisas_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
-add_action( 'after_setup_theme', 'tejamos_sonrisas_add_woocommerce_support' );
+// CORREGIDO: Añadimos el namespace a la llamada
+add_action( 'after_setup_theme', __NAMESPACE__ . '\tejamos_sonrisas_add_woocommerce_support' );
 
+/**
+ * Carga las fuentes de Google para el tema.
+ */
 function tejamos_sonrisas_enqueue_fonts() {
-    // Aquí cargas tus fuentes. Reemplaza la URL por las fuentes que elegiste.
     wp_enqueue_style( 'tejamos-sonrisas-fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap', array(), null );
 }
-add_action( 'wp_enqueue_scripts', 'tejamos_sonrisas_enqueue_fonts' );
+// CORREGIDO: Añadimos el namespace a la llamada
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\tejamos_sonrisas_enqueue_fonts' );
